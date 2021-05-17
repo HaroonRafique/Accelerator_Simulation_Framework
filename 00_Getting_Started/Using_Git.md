@@ -4,6 +4,14 @@
 
 # :computer::earth_africa: Using a web browser
 ## :earth_africa: Basic Commands
+> ### How to edit this file (or similar)
+>  - Navigate to the appropriate file: e.g. https://github.com/HaroonRafique/Accelerator_Simulation_Framework/blob/main/00_Getting_Started/Using_Git.md
+>  - Ensure that you have permission to edit this file - if not, request permission, **fork** the repository to create your own copy, create your own **branch**, or create your own file
+>  - Once open in a browser, in the top right corner of the file box locate the edit button (:pencil2:)
+>  - Edit the file using markdown (https://www.markdownguide.org/basic-syntax/)
+>  - Add emojis if you're feeling adventurous :robot: (https://github.com/ikatyang/emoji-cheat-sheet#book-paper)
+>  - Navigate to the bottom of the page :point_down:
+>  - In the **Commit changes** box, enter a commit message (***See style guide for tips on writing commit messages***), and press the green **Commit changes** button :green_square:
 
 ---
 
@@ -111,35 +119,39 @@
 
 
 ## :space_invader: :bookmark: General Tips
-> ### use environment aliases to save time
-> In your .bashrc file or equivalent (you will find this in your home directory):
+> ### Use environment aliases to save time
+> - In your .bashrc file or equivalent (you will find this in your home directory):
 >     
->     cd
->     vim .bashrc
+>       cd
+>       vim .bashrc
 >     
->   or
+> or
 >   
->     vim ~/.bashrc
-> Then use the following syntax to shorten commands:
+>       vim ~/.bashrc
+> where `vim` is a command line text editor. Try `geany` for a GUI based editor on Fedora.
+>      
+> - Add the following lines to `.bashrc` to shorten git commands:
 > 
->       # Git commands
->       #-----------------------------------------------------------------------
->       alias gp='git pull'
->       alias gpp='git push'
->       alias gs='git status'
->       alias gsu='git status -uno'
->       alias ga='git add'
->       alias gc='git commit -m'
+>         alias gp='git pull'
+>         alias gpp='git push'
+>         alias gs='git status'
+>         alias gsu='git status -uno'
+>         alias ga='git add'
+>         alias gc='git commit -m'
 >
-> Now from the terminal
+> - Either restart the terminal / SSH connection, or source (activate) the new .bashrc:
 > 
->     git status -uno
->     git pull
->     git add file.txt
->     git commit -m '<update>[file]'
->     git push
+>     source ~/.bashrc
 >     
-> becomes
+> - From the terminal the following commands can be shortened
+> 
+>         git status -uno
+>         git pull
+>         git add file.txt
+>         git commit -m '<update>[file]'
+>         git push
+>     
+> to:
 > 
 >     gsu
 >     gp
